@@ -15,26 +15,27 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/amity-university-lucknow-38047",
-  "https://www.shiksha.com/university/srm-university-delhi-ncr-sonepat-haryana-srmuh-42930",
-  "https://www.shiksha.com/college/dayananda-sagar-academy-of-technology-and-management-dsatm-kanakapura-road-bangalore-42620",
-  "https://www.shiksha.com/university/university-of-engineering-and-management-jaipur-47406",
-  "https://www.shiksha.com/college/b-n-m-institute-of-technology-banashankari-bangalore-21997",
-  "https://www.shiksha.com/college/quantum-school-of-technology-admission-office-quantum-university-dehradun-34457",
-  "https://www.shiksha.com/college/walchand-institute-of-technology-solapur-37893",
-  "https://www.shiksha.com/university/nist-university-national-institute-of-science-and-technology-brahmapur-20745",
-  "https://www.shiksha.com/college/ramrao-adik-institute-of-technology-padmashree-dr-d-y-patil-vidyapeeth-navi-mumbai-20976",
-  "https://www.shiksha.com/college/hkbk-college-of-engineering-nagavara-bangalore-3085",
-  "https://www.shiksha.com/university/shobhit-institute-of-engineering-and-technology-meerut-21960",
-  "https://www.shiksha.com/university/sandip-university-nashik-48961",
-  "https://www.shiksha.com/college/shri-vishnu-engineering-college-for-women-west-godavari-21184",
-  "https://www.shiksha.com/college/mgm-s-college-of-engineering-and-technology-navi-mumbai-24120",
-  "https://www.shiksha.com/college/ganga-institute-of-technology-and-management-jhajjar-36540",
-  "https://www.shiksha.com/college/atharva-college-of-engineering-the-atharva-educational-trust-malad-west-mumbai-19548",
-  "https://www.shiksha.com/university/the-icfai-university-dehradun-4071",
-  "https://www.shiksha.com/college/agni-college-of-technology-old-mahabalipuram-road-chennai-46548",
-  "https://www.shiksha.com/college/anand-international-college-of-engineering-jaipur-35002",
-  "https://www.shiksha.com/college/datta-meghe-college-of-engineering-navi-mumbai-24240",
+  "https://www.shiksha.com/college/siddhant-college-of-engineering-pimpri-pune-24503",
+  "https://www.shiksha.com/college/ellenki-college-of-engineering-and-technology-patancheru-hyderabad-19976",
+  "https://www.shiksha.com/university/mangalayatan-university-aligarh-22191",
+  "https://www.shiksha.com/college/pravara-rural-engineering-college-ahmednagar-48403",
+  "https://www.shiksha.com/college/university-college-of-technology-osmania-university-tarnaka-hyderabad-53682",
+  "https://www.shiksha.com/college/mam-college-of-engineering-tiruchirappalli-23776",
+  "https://www.shiksha.com/college/university-institute-of-technology-himachal-pradesh-university-shimla-23394",
+  "https://www.shiksha.com/college/government-engineering-college-barton-hill-thiruvananthapuram-49383",
+  "https://www.shiksha.com/college/velammal-college-of-engineering-and-technology-madurai-61785",
+  "https://www.shiksha.com/college/vel-tech-multi-tech-dr-rangarajan-dr-sakunthala-engineering-college-avadi-chennai-23084",
+  "https://www.shiksha.com/college/thangal-kunju-musaliar-institute-of-technology-kollam-61153",
+  "https://www.shiksha.com/college/baba-saheb-dr-bhim-rao-ambedkar-college-of-agricultural-engineering-technology-chandra-shekhar-azad-university-of-agriculture-and-technology-uttar-pradesh-other-106301",
+  "https://www.shiksha.com/university/adbu-assam-don-bosco-university-guwahati-38046",
+  "https://www.shiksha.com/college/ahmedabad-institute-of-technology-gota-28790",
+  "https://www.shiksha.com/college/toms-college-of-engineering-and-polytechnic-kottayam-60652",
+  "https://www.shiksha.com/college/school-of-engineering-and-technology-sushant-university-gurgaon-142",
+  "https://www.shiksha.com/college/government-engineering-college-raipur-20010",
+  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-bhubaneswar-2311",
+  "https://www.shiksha.com/university/mohanlal-sukhadia-university-udaipur-3891",
+  "https://www.shiksha.com/college/parvatibai-genba-moze-college-of-engineering-wagholi-pune-59973",
+
 ]
 
 
@@ -9243,7 +9244,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =141
+    c_count =561
 
     try:
         for base_url in BASE_URL:
