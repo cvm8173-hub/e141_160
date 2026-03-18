@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/siddhant-college-of-engineering-pimpri-pune-24503",
-  "https://www.shiksha.com/college/ellenki-college-of-engineering-and-technology-patancheru-hyderabad-19976",
-  "https://www.shiksha.com/university/mangalayatan-university-aligarh-22191",
-  "https://www.shiksha.com/college/pravara-rural-engineering-college-ahmednagar-48403",
-  "https://www.shiksha.com/college/university-college-of-technology-osmania-university-tarnaka-hyderabad-53682",
-  "https://www.shiksha.com/college/mam-college-of-engineering-tiruchirappalli-23776",
-  "https://www.shiksha.com/college/university-institute-of-technology-himachal-pradesh-university-shimla-23394",
-  "https://www.shiksha.com/college/government-engineering-college-barton-hill-thiruvananthapuram-49383",
-  "https://www.shiksha.com/college/velammal-college-of-engineering-and-technology-madurai-61785",
-  "https://www.shiksha.com/college/vel-tech-multi-tech-dr-rangarajan-dr-sakunthala-engineering-college-avadi-chennai-23084",
-  "https://www.shiksha.com/college/thangal-kunju-musaliar-institute-of-technology-kollam-61153",
-  "https://www.shiksha.com/college/baba-saheb-dr-bhim-rao-ambedkar-college-of-agricultural-engineering-technology-chandra-shekhar-azad-university-of-agriculture-and-technology-uttar-pradesh-other-106301",
-  "https://www.shiksha.com/university/adbu-assam-don-bosco-university-guwahati-38046",
-  "https://www.shiksha.com/college/ahmedabad-institute-of-technology-gota-28790",
-  "https://www.shiksha.com/college/toms-college-of-engineering-and-polytechnic-kottayam-60652",
-  "https://www.shiksha.com/college/school-of-engineering-and-technology-sushant-university-gurgaon-142",
-  "https://www.shiksha.com/college/government-engineering-college-raipur-20010",
-  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-bhubaneswar-2311",
-  "https://www.shiksha.com/university/mohanlal-sukhadia-university-udaipur-3891",
-  "https://www.shiksha.com/college/parvatibai-genba-moze-college-of-engineering-wagholi-pune-59973",
+  "https://www.shiksha.com/college/rajkiya-engineering-college-basti-uttar-pradesh-other-213665",
+  "https://www.shiksha.com/college/national-institute-of-electronics-and-information-technology-ropar-50665",
+  "https://www.shiksha.com/college/nielit-ajmer-national-institute-of-electronics-and-information-technology-50786",
+  "https://www.shiksha.com/college/college-of-food-technology-murbad-thane-71285",
+  "https://www.shiksha.com/college/kalam-institute-of-technology-berhampur-57999",
+  "https://www.shiksha.com/college/mahatma-gandhi-mission-s-college-of-engineering-and-technology-greater-noida-59917",
+  "https://www.shiksha.com/college/college-of-engineering-and-technology-mahatma-gandhi-mission-s-trust-noida-20588",
+  "https://www.shiksha.com/university/konkan-krishi-vidyapeeth-ratnagiri-64841",
+  "https://www.shiksha.com/university/bau-birsa-agricultural-university-ranchi-22263",
+  "https://www.shiksha.com/university/ramchandra-chandravansi-university-bishrampur-106543",
+  "https://www.shiksha.com/college/lakshmi-narain-college-of-technology-indore-42849",
+  "https://www.shiksha.com/university/st-joseph-university-chennai-227057",
+  "https://www.shiksha.com/college/jai-bharath-college-of-management-and-engineering-technology-kerala-other-60423",
+  "https://www.shiksha.com/college/rajiv-gandhi-college-of-engineering-sriperumbudur-chennai-61601",
+  "https://www.shiksha.com/college/apollo-engineering-college-poonamallee-chennai-24522",
+  "https://www.shiksha.com/college/aiems-amruta-institute-of-engineering-management-sciences-bidadi-bangalore-43235",
+  "https://www.shiksha.com/college/visakha-institute-of-engineering-and-technology-visakhapatnam-43043",
+  "https://www.shiksha.com/college/college-of-engineering-sultanpur-jawaharlal-nehru-technological-university-hyderabad-51307",
+  "https://www.shiksha.com/college/school-of-ocean-engineering-vels-institute-of-science-technology-and-advanced-studies-pallavaram-chennai-53597",
+  "https://www.shiksha.com/college/nadar-saraswathi-college-of-engineering-and-technology-theni-61755",
 
 ]
 
@@ -9244,7 +9244,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =561
+    c_count =1061
 
     try:
         for base_url in BASE_URL:
