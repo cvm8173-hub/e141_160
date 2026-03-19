@@ -15,27 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/rajkiya-engineering-college-basti-uttar-pradesh-other-213665",
-  "https://www.shiksha.com/college/national-institute-of-electronics-and-information-technology-ropar-50665",
-  "https://www.shiksha.com/college/nielit-ajmer-national-institute-of-electronics-and-information-technology-50786",
-  "https://www.shiksha.com/college/college-of-food-technology-murbad-thane-71285",
-  "https://www.shiksha.com/college/kalam-institute-of-technology-berhampur-57999",
-  "https://www.shiksha.com/college/mahatma-gandhi-mission-s-college-of-engineering-and-technology-greater-noida-59917",
-  "https://www.shiksha.com/college/college-of-engineering-and-technology-mahatma-gandhi-mission-s-trust-noida-20588",
-  "https://www.shiksha.com/university/konkan-krishi-vidyapeeth-ratnagiri-64841",
-  "https://www.shiksha.com/university/bau-birsa-agricultural-university-ranchi-22263",
-  "https://www.shiksha.com/university/ramchandra-chandravansi-university-bishrampur-106543",
-  "https://www.shiksha.com/college/lakshmi-narain-college-of-technology-indore-42849",
-  "https://www.shiksha.com/university/st-joseph-university-chennai-227057",
-  "https://www.shiksha.com/college/jai-bharath-college-of-management-and-engineering-technology-kerala-other-60423",
-  "https://www.shiksha.com/college/rajiv-gandhi-college-of-engineering-sriperumbudur-chennai-61601",
-  "https://www.shiksha.com/college/apollo-engineering-college-poonamallee-chennai-24522",
-  "https://www.shiksha.com/college/aiems-amruta-institute-of-engineering-management-sciences-bidadi-bangalore-43235",
-  "https://www.shiksha.com/college/visakha-institute-of-engineering-and-technology-visakhapatnam-43043",
-  "https://www.shiksha.com/college/college-of-engineering-sultanpur-jawaharlal-nehru-technological-university-hyderabad-51307",
-  "https://www.shiksha.com/college/school-of-ocean-engineering-vels-institute-of-science-technology-and-advanced-studies-pallavaram-chennai-53597",
-  "https://www.shiksha.com/college/nadar-saraswathi-college-of-engineering-and-technology-theni-61755",
-
+  "https://www.shiksha.com/college/malla-reddy-college-of-engineering-secunderabad-62145",
+  "https://www.shiksha.com/college/jit-jaipur-institute-of-technology-group-of-institutions-46861",
+  "https://www.shiksha.com/college/somayya-institute-of-technology-chandrapur-228705",
+  "https://www.shiksha.com/college/college-of-agricultural-engineering-dediapada-navsari-agricultural-university-gujarat-other-58433",
+  "https://www.shiksha.com/college/government-engineering-college-raichur-59365",
+  "https://www.shiksha.com/college/svs-group-of-institutions-warangal-61341",
+  "https://www.shiksha.com/college/brilliant-grammar-school-educational-society-s-group-of-institutions-rangareddy-hyderabad-63711",
+  "https://www.shiksha.com/college/malwa-institute-of-science-technology-indore-61243",
+  "https://www.shiksha.com/college/jayamukhi-institute-of-technological-sciences-jits-warangal-20381",
+  "https://www.shiksha.com/college/mookambigai-college-of-engineering-mce-keeranur-tamil-nadu-other-22809",
+  "https://www.shiksha.com/college/malla-reddy-institute-of-technology-and-science-secunderabad-42790",
+  "https://www.shiksha.com/college/vaigai-college-of-engineering-madurai-61789",
+  "https://www.shiksha.com/university/pacific-university-udaipur-38049",
+  "https://www.shiksha.com/college/government-engineering-college-bidar-213707",
+  "https://www.shiksha.com/college/st-michael-college-of-engineering-and-technology-tamil-nadu-other-23013",
+  "https://www.shiksha.com/college/college-of-engineering-kallooppara-pathanamthitta-60588",
+  "https://www.shiksha.com/college/shri-rawatpura-sarkar-institutions-datia-88035",
+  "https://www.shiksha.com/university/rungta-international-skills-university-bhilai-242292",
+  "https://www.shiksha.com/college/secab-institute-of-engineering-and-technology-siet-bijapur-3971",
+  "https://www.shiksha.com/college/sri-krishna-college-of-engineering-vellore-61483",
 ]
 
 
@@ -9244,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1061
+    c_count =1441
 
     try:
         for base_url in BASE_URL:
