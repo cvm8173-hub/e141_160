@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/s-veerasamy-chettiar-college-of-engineering-and-technology-tirunelveli-22919",
-  "https://www.shiksha.com/college/rao-pahlad-singh-group-of-institutions-haryana-other-45541",
-  "https://www.shiksha.com/college/helapuri-institute-of-technology-and-science-eluru-60660",
-  "https://www.shiksha.com/college/unnamalai-institute-of-technology-tamil-nadu-other-48086",
-  "https://www.shiksha.com/college/samalkha-group-of-institutions-admission-office-shalimar-bagh-delhi-47414",
-  "https://www.shiksha.com/college/radhakrishna-institute-of-technology-and-engineering-khurda-61375",
-  "https://www.shiksha.com/college/national-institute-of-management-and-technology-jaipur-36864",
-  "https://www.shiksha.com/college/jagruti-institute-of-engineering-and-technology-ibrahimpatnam-hyderabad-42782",
-  "https://www.shiksha.com/college/maha-barathi-engineering-college-villupuram-61669",
-  "https://www.shiksha.com/college/udupi-institute-of-hotel-and-tourism-66843",
-  "https://www.shiksha.com/college/sri-sai-group-of-institutes-admission-office-connaught-place-delhi-25137",
-  "https://www.shiksha.com/college/shri-pillappa-college-of-engineering-hessarghatta-road-bangalore-37000",
-  "https://www.shiksha.com/college/indus-institute-of-technology-engineering-gandhinagar-60527",
-  "https://www.shiksha.com/college/m-a-m-school-of-engineering-tiruchirappalli-61537",
-  "https://www.shiksha.com/college/global-nature-care-group-sangathan-institution-jabalpur-68633",
-  "https://www.shiksha.com/college/r-l-s-y-college-bettiah-111627",
-  "https://www.shiksha.com/college/disha-institute-of-management-and-technology-raipur-28172",
-  "https://www.shiksha.com/college/bharat-group-of-institutions-sonepat-32347",
-  "https://www.shiksha.com/college/bis-group-of-institutions-moga-43335",
-  "https://www.shiksha.com/university/saveetha-amaravati-university-vijayawada-64739",
+  "https://www.shiksha.com/college/maharaja-agrasen-institute-of-pharmacy-lehragaga-punjab-other-154875",
+  "https://www.shiksha.com/college/kunwar-ajeet-college-of-pharmacy-jaunpur-155931",
+  "https://www.shiksha.com/college/aditya-institute-of-pharmaceutical-sciences-and-research-east-godavari-156593",
+  "https://www.shiksha.com/college/modern-international-college-of-pharmacy-district-faridabad-self-financed-179881",
+  "https://www.shiksha.com/college/vidushi-college-of-pharmacy-uttar-pradesh-other-181601",
+  "https://www.shiksha.com/college/swami-sahajanand-college-of-pharmacy-azamgarh-181645",
+  "https://www.shiksha.com/college/ram-teerath-college-of-pharmacy-hapur-181831",
+  "https://www.shiksha.com/college/government-degree-college-tangmarg-baramulla-187861",
+  "https://www.shiksha.com/college/sri-venkateshwara-college-of-paramedical-sciences-pondicherry-229640",
+  "https://www.shiksha.com/college/kailash-hospital-and-heart-institute-noida-230006",
+  "https://www.shiksha.com/college/vikramaditya-institute-of-pharmaceautical-science-hoshangabad-230072",
+  "https://www.shiksha.com/college/r-r-college-of-education-jaipur-231498",
+  "https://www.shiksha.com/college/scamewo-institute-of-pharmaceutical-science-guwahati-231566",
+  "https://www.shiksha.com/college/deep-college-of-pharmacy-boisar-236682",
+  "https://www.shiksha.com/college/kims-sunshine-hospitals-hyderabad-240590",
+  "https://www.shiksha.com/college/starcare-hospital-kozhikode-240898",
+  "https://www.shiksha.com/college/nurul-islam-college-of-pharmacy-alipurduar-244284",
+  "https://www.shiksha.com/college/rajarshi-dashrath-autonomous-state-medical-college-ayodhya-uttar-pradesh-other-244566",
+  "https://www.shiksha.com/college/homi-bhabha-cancer-hospital-and-research-centre-new-chandigarh-245714",
+  "https://www.shiksha.com/college/kc-group-of-institutions-nawanshahar-23160",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1861
+    c_count = 3581
 
     try:
         for base_url in BASE_URL:
