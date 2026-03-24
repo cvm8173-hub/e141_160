@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/patiala-polytechnic-college-99837",
-  "https://www.shiksha.com/college/tirupati-college-of-polytechnic-and-pharmacy-haryana-other-100649",
-  "https://www.shiksha.com/college/comtrust-eye-hospital-calicut-106033",
-  "https://www.shiksha.com/college/sarada-degree-college-prakasam-115721",
-  "https://www.shiksha.com/college/bankar-patil-college-of-pharmacy-nashik-147759",
-  "https://www.shiksha.com/college/smt-sharadchandrika-suresh-patil-institute-of-technology-d-pharmacy-jalgaon-147859",
-  "https://www.shiksha.com/college/shriganesh-ramchandra-katruwar-college-of-pharmacy-parbhani-179641",
-  "https://www.shiksha.com/college/dr-dashrath-chaudhary-college-of-pharmacy-uttar-pradesh-other-181177",
-  "https://www.shiksha.com/college/shri-jivanbhai-jorabhai-desai-bhanduwala-physiotherapy-college-mehsana-197101",
-  "https://www.shiksha.com/college/new-nursing-school-beed-198177",
-  "https://www.shiksha.com/college/sunrise-institute-of-paramedical-sciences-bidar-199521",
-  "https://www.shiksha.com/college/madani-college-of-pharmacy-karnataka-other-199597",
-  "https://www.shiksha.com/college/raghuvir-institute-of-nursing-and-paramedical-sciences-raebareli-199903",
-  "https://www.shiksha.com/college/school-of-pharmacy-and-research-sitapur-200071",
-  "https://www.shiksha.com/college/lourdes-hospital-ernakulum-201265",
-  "https://www.shiksha.com/college/city-college-of-allied-health-sciences-karnataka-other-201947",
-  "https://www.shiksha.com/college/pitambara-college-is-a-pharmacy-ranchi-207623",
-  "https://www.shiksha.com/college/ranchi-college-of-technology-and-research-centre-207625",
-  "https://www.shiksha.com/college/s-p-singh-college-of-pharmacy-ranchi-207645",
-  "https://www.shiksha.com/college/trinity-educational-institute-ranchi-207651",
+  "https://www.shiksha.com/college/late-smt-s-g-patel-institute-of-physiotherapy-anand-197167",
+  "https://www.shiksha.com/college/late-sri-veerbhadrappa-devarkal-education-college-yadgir-199469",
+  "https://www.shiksha.com/college/joshi-institute-of-paramedical-sciences-bangalore-199679",
+  "https://www.shiksha.com/college/major-s-d-s-college-of-pharmacy-farrukhabad-200069",
+  "https://www.shiksha.com/college/sahyog-college-of-medical-sciences-jharkhand-other-207637",
+  "https://www.shiksha.com/college/manjunatha-college-of-pharmacy-bangalore-207801",
+  "https://www.shiksha.com/college/subash-college-of-pharmacy-karnataka-other-207973",
+  "https://www.shiksha.com/college/divya-college-of-pharmacy-maharajganj-208295",
+  "https://www.shiksha.com/college/sanskar-pharmacy-college-palsana-rajasthan-other-236930",
+  "https://www.shiksha.com/college/shree-kalyan-arogya-sadan-department-of-pharmacy-sikar-236938",
+  "https://www.shiksha.com/college/kabiguru-college-of-pharmacy-birbhum-237290",
+  "https://www.shiksha.com/college/pandit-iswar-chandra-vidyasagar-college-of-pharmacy-west-bengal-other-237324",
+  "https://www.shiksha.com/college/apex-hospital-jaipur-240646",
+  "https://www.shiksha.com/college/sri-sathya-sai-sanjeevani-hospitals-palwal-240890",
+  "https://www.shiksha.com/college/mmi-narayana-multispeciality-hospital-raipur-243714",
+  "https://www.shiksha.com/college/shri-prakashchand-jain-college-of-physiotherapy-research-jamner-jalgaon-245094",
+  "https://www.shiksha.com/college/sanjivani-university-powered-by-emversity-ahmednagar-246034",
+  "https://www.shiksha.com/college/st-soldier-institute-of-engineering-and-technology-jalandhar-43237",
+  "https://www.shiksha.com/college/s-k-c-college-of-pharmacy-andhra-pradesh-other-61047",
+  "https://www.shiksha.com/college/st-ann-s-degree-college-for-women-guntur-62323",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3941
+    c_count = 4301
 
     try:
         for base_url in BASE_URL:
