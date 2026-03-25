@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/late-smt-s-g-patel-institute-of-physiotherapy-anand-197167",
-  "https://www.shiksha.com/college/late-sri-veerbhadrappa-devarkal-education-college-yadgir-199469",
-  "https://www.shiksha.com/college/joshi-institute-of-paramedical-sciences-bangalore-199679",
-  "https://www.shiksha.com/college/major-s-d-s-college-of-pharmacy-farrukhabad-200069",
-  "https://www.shiksha.com/college/sahyog-college-of-medical-sciences-jharkhand-other-207637",
-  "https://www.shiksha.com/college/manjunatha-college-of-pharmacy-bangalore-207801",
-  "https://www.shiksha.com/college/subash-college-of-pharmacy-karnataka-other-207973",
-  "https://www.shiksha.com/college/divya-college-of-pharmacy-maharajganj-208295",
-  "https://www.shiksha.com/college/sanskar-pharmacy-college-palsana-rajasthan-other-236930",
-  "https://www.shiksha.com/college/shree-kalyan-arogya-sadan-department-of-pharmacy-sikar-236938",
-  "https://www.shiksha.com/college/kabiguru-college-of-pharmacy-birbhum-237290",
-  "https://www.shiksha.com/college/pandit-iswar-chandra-vidyasagar-college-of-pharmacy-west-bengal-other-237324",
-  "https://www.shiksha.com/college/apex-hospital-jaipur-240646",
-  "https://www.shiksha.com/college/sri-sathya-sai-sanjeevani-hospitals-palwal-240890",
-  "https://www.shiksha.com/college/mmi-narayana-multispeciality-hospital-raipur-243714",
-  "https://www.shiksha.com/college/shri-prakashchand-jain-college-of-physiotherapy-research-jamner-jalgaon-245094",
-  "https://www.shiksha.com/college/sanjivani-university-powered-by-emversity-ahmednagar-246034",
-  "https://www.shiksha.com/college/st-soldier-institute-of-engineering-and-technology-jalandhar-43237",
-  "https://www.shiksha.com/college/s-k-c-college-of-pharmacy-andhra-pradesh-other-61047",
-  "https://www.shiksha.com/college/st-ann-s-degree-college-for-women-guntur-62323",
+  "https://www.shiksha.com/university/lakshmibai-national-institute-of-physical-education-gwalior-64911",
+  "https://www.shiksha.com/college/punjab-degree-college-faridkot-74611",
+  "https://www.shiksha.com/college/times-college-damoh-77423",
+  "https://www.shiksha.com/college/k-e-s-loknete-adv-datta-patil-homoeopathic-medical-college-and-hospital-vengurla-sindhudurg-87027",
+  "https://www.shiksha.com/college/shri-mangilal-nirvan-homeopathic-medical-college-and-research-centre-bikaner-87107",
+  "https://www.shiksha.com/college/homoeopathic-medical-college-and-hospital-abohar-punjab-other-87137",
+  "https://www.shiksha.com/college/bhagyoday-tirth-pharmacy-college-sagar-88089",
+  "https://www.shiksha.com/college/gsps-institute-of-pharmacy-akola-88227",
+  "https://www.shiksha.com/college/agra-public-institute-of-tech-and-computer-education-88403",
+  "https://www.shiksha.com/college/bherulal-patidar-government-pg-college-indore-110993",
+  "https://www.shiksha.com/college/college-of-veterinary-sciences-and-animal-husbandry-radha-kishore-nagar-agartala-152251",
+  "https://www.shiksha.com/college/icri-sardar-bhagwan-singh-university-dehradun-153029",
+  "https://www.shiksha.com/college/government-homoeopathic-medical-college-and-hospital-aligarh-208855",
+  "https://www.shiksha.com/college/raak-college-of-pharmacy-pondicherry-229636",
+  "https://www.shiksha.com/college/bombay-institute-of-pharmacy-and-research-mumbai-236666",
+  "https://www.shiksha.com/college/dr-r-m-l-institute-of-pharmacy-shahjahanpur-65477",
+  "https://www.shiksha.com/college/v-p-college-of-pharmacy-madkhol-sindhudurg-88511",
+  "https://www.shiksha.com/college/government-polytechnic-for-women-nizamabad-100117",
+  "https://www.shiksha.com/college/jupiter-hospital-thane-106109",
+  "https://www.shiksha.com/college/varun-arjun-college-of-pharmacy-shahjahanpur-149053",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4301
+    c_count = 2601
 
     try:
         for base_url in BASE_URL:
